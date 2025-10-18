@@ -4,11 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicholas Laprade | ML Portfolio</title>
+
+  <!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+    <button id="darkModeToggle"> Toggle Dark Mode </button>
+
     <h1>Welcome to My Site</h1>
     <p>Machine Learning Engineer | Ensemble Modeling | Interpretability | Reproducible Workflows</p>
     <nav>
@@ -20,58 +24,88 @@
 
   <main>
     <section id="about">
-      <h2>About Me</h2>
-      <img src="images/me.jpg" alt="memyselfi" class="about-img"/>
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="images/me.jpg" alt="memyselfi" class="about-img" />
+    <div class="about-text">
       <p>
-        I'm Nicholas Laprade, a software engineer focused on machine learning and AI. I specialize in modular ML pipelines, ensemble modeling, SHAP interpretability, and Dockerized deployment. I love building dashboards that make data actionable and reproducible.
+        Hello, I'm Nicholas Laprade. I build ML pipelines, tune ensemble models, and deploy dashboards that make data useful.
       </p>
-    </section>
-
-    <section id="projects">
-  <h2>Featured Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>Car Cost Prediction Dashboard</h3>
-      <p>Modular ML pipeline with SHAP interpretability, Dockerized deployment, and Streamlit UI.</p>
-      <ul>
-        <li><strong>Tech:</strong> XGBoost, SHAP, Docker, Streamlit</li>
-        <li><strong>Features:</strong> Audit trail logging, encoding strategy comparison</li>
-      </ul>
-      <div class="project-links">
-        <a href="https://github.com/nlaprade/bmw-price-dashboard" target="_blank">GitHub Repo</a>
-        <a href="https://bmw-price-dashboard-nicholas-laprade.streamlit.app/" target="_blank">Live Demo</a>
-      </div>
-      <img src="images/dashboard-preview.JPG" alt="Dashboard screenshot" />
-    </div>
-
-    <div class="project-card">
-      <h3>WiP Project</h3>
-      <p>Add Text Here.</p>
-      <ul>
-        <li><strong>Tech:</strong> Add Text Here</li>
-        <li><strong>Features:</strong> Add Text Here</li>
-      </ul>
-      <div class="project-links">
-        <a href="https://github.com/yourusername/shap-encoding-explorer" target="_blank">GitHub Repo</a>
-        <a href="https://your-streamlit-app-url" target="_blank">Live Demo</a>
-      </div>
-      <img src="images/shap-preview.JPG" alt="SHAP dashboard screenshot" />
-    </div>
-
-    <div class="project-card">
-      <h3>WiP Project</h3>
-      <p>Add Text Here.</p>
-      <ul>
-        <li><strong>Tech:</strong> Add Text Here</li>
-        <li><strong>Features:</strong> Add Text Here</li>
-      </ul>
-      <div class="project-links">
-        <a href="https://github.com/yourusername/shap-encoding-explorer" target="_blank">GitHub Repo</a>
-        <a href="https://your-streamlit-app-url" target="_blank">Live Demo</a>
-      </div>
-      <img src="images/shap-preview.JPG" alt="SHAP dashboard screenshot" />
     </div>
   </div>
+</section>
+
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+
+      <div class="accordion">
+
+        <!-- Project 1 -->
+        <div class="accordion-item">
+          <button class="accordion-toggle">Car Cost Prediction Dashboard</button>
+          <div class="accordion-content">
+            <p>Modular ML pipeline with SHAP interpretability, Dockerized deployment, and Streamlit UI.</p>
+            <ul>
+              <li><strong>Tech:</strong> XGBoost, SHAP, Docker, Streamlit</li>
+              <li><strong>Features:</strong> Audit trail logging, encoding strategy comparison</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/nlaprade/bmw-price-dashboard" target="_blank">GitHub Repo</a>
+              <a href="https://bmw-price-dashboard-nicholas-laprade.streamlit.app/" target="_blank">Live Demo</a>
+            </div>
+            <img src="images/dashboard-preview.JPG" alt="Dashboard screenshot" />
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="accordion-item">
+          <button class="accordion-toggle">WiP Project</button>
+          <div class="accordion-content">
+            <p>Add Text Here.</p>
+            <ul>
+              <li><strong>Tech:</strong> Add Text Here</li>
+              <li><strong>Features:</strong> Add Text Here</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/shap-encoding-explorer" target="_blank">GitHub Repo</a>
+              <a href="https://your-streamlit-app-url" target="_blank">Live Demo</a>
+            </div>
+            <img src="images/shap-preview.JPG" alt="SHAP dashboard screenshot" />
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="accordion-item">
+          <button class="accordion-toggle">WiP Project</button>
+          <div class="accordion-content">
+            <p>Add Text Here.</p>
+            <ul>
+              <li><strong>Tech:</strong> Add Text Here</li>
+              <li><strong>Features:</strong> Add Text Here</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/shap-encoding-explorer" target="_blank">GitHub Repo</a>
+              <a href="https://your-streamlit-app-url" target="_blank">Live Demo</a>
+            </div>
+            <img src="images/shap-preview.JPG" alt="SHAP dashboard screenshot" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills">
+  <h2>Skills & Tools</h2>
+  <ul class="skills-list">
+    <li>Python</li>
+    <li>scikit-learn</li>
+    <li>XGBoost</li>
+    <li>Docker</li>
+    <li>Streamlit</li>
+    <li>SHAP</li>
+    <li>GitHub</li>
+  </ul>
 </section>
 
 
@@ -83,6 +117,19 @@
 
   <footer>
     <p>&copy; 2025 Nicholas Laprade</p>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact</a>
+    </nav>
   </footer>
+
+  <script>
+  const toggle = document.getElementById('darkModeToggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
 </body>
 </html>

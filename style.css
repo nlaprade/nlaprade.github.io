@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: #f5f7fa;
@@ -44,59 +48,112 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* === Sections === */
+/* === Section Layout === */
 section {
-  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1rem;
 }
 
 section h2 {
+  position: relative;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #222;
 }
 
-.project-grid {
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #007acc;
+  margin-top: 0.5rem;
+}
+
+/* === About Image === */
+.about-container {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 2rem;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.project-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  width: 100%;
-  max-width: 500px;
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.about-img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
-.project-card h3 {
-  font-size: 1.5rem;
-  color: #007acc;
-  margin-bottom: 0.5rem;
+.about-text {
+  flex: 1;
+  min-width: 250px;
 }
 
-.project-card p {
+.about-text p {
+  font-size: 1rem;
   color: #555;
+  line-height: 1.6;
+}
+
+
+/* === Accordion Projects === */
+.accordion-item {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.accordion-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-toggle:hover {
+  background-color: #005fa3;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease-in-out;
   margin-bottom: 1rem;
 }
 
-.project-card ul {
-  list-style: none;
-  padding-left: 0;
+.accordion-content p {
   margin-bottom: 1rem;
+  margin-left: -0.5rem;
 }
 
-.project-card ul li {
-  margin-bottom: 0.5rem;
+
+.accordion-content.open {
+  display: block;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.accordion-content img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+/* === Project Links === */
 .project-links a {
   display: inline-block;
   margin-right: 1rem;
@@ -112,23 +169,66 @@ section h2 {
   background-color: #005fa3;
 }
 
-.project-card img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  margin-top: 1rem;
-  border-radius: 6px;
-  object-fit: contain;
+/* === Contact Section === */
+#contact a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.about-img {
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  margin: 1rem auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#contact a:hover {
+  text-decoration: underline;
 }
+
+/* === Dark Mode Styles === */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+body.dark-mode p {
+  color: #ddd;
+}
+
+body.dark-mode header h1,
+body.dark-mode nav a,
+body.dark-mode section h2 {
+  color: #66ccff;
+}
+
+body.dark-mode .accordion-toggle {
+  background-color: #333;
+  color: #eee;
+}
+
+body.dark-mode .accordion-toggle:hover {
+  background-color: #444;
+}
+
+body.dark-mode .accordion-content {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark-mode .project-links a {
+  background-color: #444;
+  color: #eee;
+}
+
+body.dark-mode .project-links a:hover {
+  background-color: #666;
+}
+
+body.dark-mode footer,
+body.dark-mode footer nav a {
+  color: #aaa;
+}
+
+#darkModeToggle {
+  padding: 0.2rem;
+
+}
+
 
 
 /* === Footer === */
@@ -138,3 +238,13 @@ footer {
   font-size: 0.9rem;
   color: #777;
 }
+
+footer nav {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+footer nav a {
+  color: #007acc;
+  text-decoration: none;
+  margin: 0
