@@ -1,146 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nicholas Laprade | ML Portfolio</title>
-
-  <!-- Fonts and Styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Materialize (modern version) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css" />
+  <a href="#" data-target="sidebar" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
+  <meta name="description" content="Portfolio of Nicholas Laprade, Data Scientist specializing in Machine Learning and Analytics.">
+  <meta name="keywords" content="Data Scientist, Machine Learning, AI, Portfolio, Nicholas Laprade, Predictive Modeling, Dashboard">
+  <meta name="author" content="Nicholas Laprade">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
+
 <body>
-  <header>
-    <button id="darkModeToggle"> Toggle Dark Mode </button>
+<!-- Sidebar Navigation -->
+<ul id="sidebar" class="sidenav sidenav-fixed">
+  <div class="profile-frame">
+  <img src="images/me.jpg" alt="Nicholas Laprade">
+</div>
 
-    <h1>Welcome to My Site</h1>
-    <p>Machine Learning Engineer | Ensemble Modeling | Interpretability | Reproducible Workflows</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <hr class="divider">
 
-  <main>
-    <section id="about">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <img src="images/me.jpg" alt="memyselfi" class="about-img" />
-    <div class="about-text">
+  <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+  <li><a href="#projects"><i class="fa fa-briefcase"></i> Projects</a></li>
+  <li><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
+  <li><a href="#education"><i class="fa fa-graduation-cap"></i> Education</a></li>
+  <li><a href="#experience"><i class="fa fa-user"></i> Experience</a></li>
+  <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+  <li><a href="Nicholas Laprade Resume.pdf" target="_blank"><i class="fa fa-file-alt"></i> Resume</a></li>
+</ul>
+
+
+
+<!-- Main content wrapper -->
+<div class="main-content">
+
+
+
+  <!-- Intro Section -->
+  <section id="intro" class="section center-align">
+    <div class="container">
+      
+      <h2>Hi, I'm Nicholas Laprade</span></h2>
+      <h5>Data Scientist | Machine Learning & Analytics | Clear, Actionable Insights</h5>
+      <p>Building reproducible, interpretable models that turn raw data into trusted outcomes.</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/nicholas-laprade" target="_blank" class="btn-floating btn-large blue"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/nlaprade" target="_blank" class="btn-floating btn-large black"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <h3 class="teal-text">ABOUT</h3>
+    <p>I am a recent graduate in Software Engineering Technology from Centennial College, passionate about data science and machine learning. I enjoy complex problems and turning data into clear, actionable insights. My academic foundation and hands-on projects have given me experience in building reproducible machine learning pipelines, tuning models, and applying interpretability techniques to make predictions transparent and trustworthy.</p>
+    <br>
+    <div class="skills-block">
+      <p><strong>Languages:</strong> Python, C#, JavaScript, HTML/CSS</p>
+      <p><strong>Databases:</strong> MySQL</p>
+      <p><strong>Libraries:</strong> NumPy, Pandas, scikit-learn, SHAP, PySpark, Matplotlib</p>
+      <p><strong>Frameworks:</strong> Flask, Keras, TensorFlow, PyTorch</p>
+      <p><strong>Tools & Technologies:</strong> Git, Docker</p>
+    </div>
+    <br>
+    <p>Looking for an opportunity to work in a challenging position combining my skills in Data Science and Machine Learning, which provides professional development, meaningful experiences, and personal growth.</p>
+  </div>
+</section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h3 class="teal-text">PROJECTS</h3>
+      <div class="row">
+        <div class="col s12 m6 l4">
+  <div class="card">
+    <div class="card-image">
+      <img src="images/dashboard-preview2.JPG" alt="Prediabetes Prediction Dashboard screenshot" />
+    </div>
+    <div class="card-content">
+      <span class="card-title">Prediabetes Prediction Dashboard</span>
       <p>
-        I work with machine learning, building modular pipelines, tuning ensemble models, and making sense of predictions with SHAP. I enjoy turning technical complexity into something useful, shareable, and clear. Always learning, always contributing.
+        Interactive dashboard for predicting prediabetes risk levels using a modular ML pipeline with SHAP interpretability and Streamlit UI.
       </p>
+      <h5 class="orange-text">Technologies Used:</h5>
+      <div class="tech-bubbles">
+        <div class="chip">Python</div>
+        <div class="chip">Streamlit</div>
+        <div class="chip">Scikit‑learn</div>
+        <div class="chip">XGBoost</div>
+        <div class="chip">CatBoost</div>
+        <div class="chip">SHAP</div>
+        <div class="chip">Pandas</div>
+        <div class="chip">NumPy</div>
+        <div class="chip">Matplotlib</div>
+        <div class="chip">Seaborn</div>
+        <div class="chip">Plotly</div>
+        <div class="chip">IPython</div>
+        <div class="chip">Docker</div>
+      </div>
+    </div>
+    <div class="card-action">
+      <a href="https://github.com/nlaprade/CDC-diabetes-health-indicators-nlaprade" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://cdc-diabetes-nlaprade.streamlit.app/" target="_blank">
+        <i class="fa fa-external-link"></i> Live Demo
+      </a>
+    </div>
+  </div>
+</div>
+
+        <div class="col s12 m6 l4">
+  <div class="card">
+    <div class="card-image">
+      <img src="images/dashboard-preview.JPG" alt="Car Cost Prediction Dashboard screenshot" />
+    </div>
+    <div class="card-content">
+  <span class="card-title">Car Cost Prediction Dashboard</span>
+  <p>
+    Modular machine learning pipeline with SHAP interpretability, Dockerized deployment, and an interactive Streamlit UI.
+  </p>
+  <h5 class="orange-text">Technologies Used:</h5>
+  <div class="tech-bubbles">
+    <div class="chip">Python</div>
+    <div class="chip">Pandas</div>
+    <div class="chip">Matplotlib</div>
+    <div class="chip">Seaborn</div>
+    <div class="chip">Scikit‑learn</div>
+    <div class="chip">XGBoost</div>
+    <div class="chip">CatBoost</div>
+    <div class="chip">SHAP</div>
+    <div class="chip">Streamlit</div>
+    <div class="chip">IPython</div>
+    <div class="chip">Docker</div>
+  </div>
+</div>
+
+    <div class="card-action">
+      <a href="https://github.com/nlaprade/bmw-price-dashboard" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://bmw-price-dashboard-nicholas-laprade.streamlit.app/" target="_blank">
+        <i class="fa fa-external-link"></i> Live Demo
+      </a>
+    </div>
+  </div>
+</div>
+
+        <div class="col s12 m6 l4">
+  <div class="card">
+    <div class="card-image">
+      <img src="images/asl.JPG" alt="American Sign Language Trainer screenshot" />
+    </div>
+    <div class="card-content">
+      <span class="card-title">American Sign Language Trainer</span>
+      <p>An interactive application that enables users to improve their ASL skills using computer vision and deep learning.</p>
+      <br>
+      <h5 class="orange-text">Technologies Used:</h5>
+      <div class="tech-bubbles">
+        <div class="chip">Python</div>
+        <div class="chip">Flask</div>
+        <div class="chip">TensorFlow</div>
+        <div class="chip">Keras</div>
+        <div class="chip">JAX</div>
+        <div class="chip">Mediapipe</div>
+        <div class="chip">OpenCV</div>
+        <div class="chip">NumPy</div>
+        <div class="chip">SciPy</div>
+        <div class="chip">Matplotlib</div>
+        <div class="chip">Seaborn</div>
+        <div class="chip">Plotly</div>
+      </div>
+    </div>
+    <div class="card-action">
+      <a href="https://github.com/ASLTrainer-Comp385-402/ASL-Trainer" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://drive.google.com/file/d/1seTuaHFhOYnjTLEIUJBHOgmd0p98dHYP/view?usp=drive_link" target="_blank">
+        <i class="fa fa-external-link"></i> Link to Video</a>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <h3 class="teal-text">SKILLS</h3>
+
+    <!-- Languages -->
+    <h4 class="orange-text">Languages</h4>
+    <hr class="divider">
+    <div class="row text-center">
+      <div class="col s4 m2"><img src="images/python-logo.png" class="responsive-img" alt="Python Logo"/>Python</div>
+      <div class="col s4 m2"><img src="images/csharp-logo.png" class="responsive-img" alt="C# Logo"/>C#</div>
+      <div class="col s4 m2"><img src="images/javascript-logo.png" class="responsive-img" alt="JavaScript Logo"/>JavaScript</div>
+      <div class="col s4 m2"><img src="images/html-logo.png" class="responsive-img" alt="HTML5 Logo"/>HTML5</div>
+      <div class="col s4 m2"><img src="images/css-logo.png" class="responsive-img" alt="CSS3 Logo"/>CSS3</div>
+    </div>
+
+    <!-- Libraries -->
+    <h4 class="orange-text">Libraries</h4>
+    <hr class="divider">
+    <div class="row text-center">
+      <div class="col s4 m2"><img src="images/numpy-logo.png" class="responsive-img" alt="NumPy Logo"/>NumPy</div>
+      <div class="col s4 m2"><img src="images/sklearn-logo.png" class="responsive-img" alt="Scikit-learn Logo"/>Scikit-learn</div>
+      <div class="col s4 m2"><img src="images/shap-logo.png" class="responsive-img" alt="SHAP Logo"/>SHAP</div>
+      <div class="col s4 m2"><img src="images/pyspark-logo.png" class="responsive-img" alt="PySpark Logo"/>PySpark</div>
+      <div class="col s4 m2"><img src="images/matplot-logo.png" class="responsive-img" alt="Matplotlib Logo"/>Matplotlib</div>
+    </div>
+
+    <!-- Frameworks -->
+    <h4 class="orange-text">Frameworks</h4>
+    <hr class="divider">
+    <div class="row text-center">
+      <div class="col s4 m2"><img src="images/flask-logo.png" class="responsive-img" alt="Flask Logo"/>Flask</div>
+      <div class="col s4 m2"><img src="images/keras-logo.png" class="responsive-img" alt="Keras Logo"/>Keras</div>
+      <div class="col s4 m2"><img src="images/tensorflow-logo.png" class="responsive-img" alt="TensorFlow Logo"/>TensorFlow</div>
+      <div class="col s4 m2"><img src="images/pytorch-logo.png" class="responsive-img" alt="PyTorch Logo"/>PyTorch</div>
+    </div>
+
+    <!-- Tools -->
+    <h4 class="orange-text">Tools & Technologies</h4>
+    <hr class="divider">
+    <div class="row text-center">
+      <div class="col s4 m2"><img src="images/git-logo.png" class="responsive-img" alt="Git Logo"/>Git</div>
+      <div class="col s4 m2"><img src="images/docker-logo.png" class="responsive-img" alt="Docker Logo"/>Docker</div>
+      <div class="col s4 m2"><img src="images/aws-logo.png" class="responsive-img" alt="AWS Logo"/>AWS</div>
     </div>
   </div>
 </section>
 
 
-    <section id="projects">
-      <h2>Featured Projects</h2>
-
-      <div class="accordion">
-
-        <!-- Project 1 -->
-        <div class="accordion-item">
-          <button class="accordion-toggle">Car Cost Prediction Dashboard</button>
-          <div class="accordion-content">
-            <p>Modular ML pipeline with SHAP interpretability, Dockerized deployment, and Streamlit UI.</p>
-            <ul>
-              <li><strong>Tech:</strong> XGBoost, SHAP, Docker, Streamlit</li>
-              <li><strong>Features:</strong> Audit trail logging, encoding strategy comparison</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/nlaprade/bmw-price-dashboard" target="_blank">GitHub Repo</a>
-              <a href="https://bmw-price-dashboard-nicholas-laprade.streamlit.app/" target="_blank">Live Demo</a>
-            </div>
-            <img src="images/dashboard-preview.JPG" alt="Dashboard screenshot" />
+<!-- Education Section -->
+<section id="education" class="section">
+  <div class="container">
+    <h3 class="teal-text">EDUCATION</h3>
+    <div class="row">
+      
+      <!-- School 1 -->
+      
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Centennial College</span>
+            <hr class="divider">
+            <p><strong>Location:</strong> Toronto, ON</p>
+            <p><strong>Program Title:</strong> Software Engineering Technology</p>
+            <p><strong>Diploma:</strong> Ontario College Advanced Diploma</p>
+            <p><strong>Relevant Coursework:</strong> Deep Learning, Cloud Machine Learning, NLP, Unsupervised & Reinforcement Learning, Neural Networks</p>
+            <p><strong>Start & End:</strong> Sept 2022 - June 2025</p>
           </div>
         </div>
-
-        <!-- Project 2 -->
-        <div class="accordion-item">
-          <button class="accordion-toggle">WiP Project</button>
-          <div class="accordion-content">
-            <p>Add Text Here.</p>
-            <ul>
-              <li><strong>Tech:</strong> Add Text Here</li>
-              <li><strong>Features:</strong> Add Text Here</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/yourusername/shap-encoding-explorer" target="_blank">GitHub Repo</a>
-              <a href="https://your-streamlit-app-url" target="_blank">Live Demo</a>
-            </div>
-            <img src="images/shap-preview.JPG" alt="SHAP dashboard screenshot" />
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="accordion-item">
-          <button class="accordion-toggle">WiP Project</button>
-          <div class="accordion-content">
-            <p>Add Text Here.</p>
-            <ul>
-              <li><strong>Tech:</strong> Add Text Here</li>
-              <li><strong>Features:</strong> Add Text Here</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/yourusername/shap-encoding-explorer" target="_blank">GitHub Repo</a>
-              <a href="https://your-streamlit-app-url" target="_blank">Live Demo</a>
-            </div>
-            <img src="images/shap-preview.JPG" alt="SHAP dashboard screenshot" />
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <section id="skills">
-  <h2>Skills & Tools</h2>
-  <ul class="skills-list">
-    <li>Python</li>
-    <li>scikit-learn</li>
-    <li>XGBoost</li>
-    <li>Docker</li>
-    <li>Streamlit</li>
-    <li>SHAP</li>
-    <li>GitHub</li>
-  </ul>
+      <!-- School 2 -->
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Humber College</span>
+            <hr class="divider">
+            <p><strong>Location:</strong> Toronto, ON</p>
+            <p><strong>Program Title:</strong> Protection, Security, Investigations: Forensic Identifications</p>
+            <p><strong>Diploma:</strong> Ontario College Advanced Diploma</p>
+            <p><strong>Relevant Coursework:</strong> Crime Scene Mapping, Disaster Scene Management, Digial & Video Photography, Fingerprint Development & Analysis</p>
+            <p><strong>Start & End:</strong> Sept 2016 - June 2019</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="container">
+    <h3 class="teal-text">EXPERIENCE</h3>
+    <div class="row">
+
+      <!-- Sparkle Experience -->
+      
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Sparkle Pharmacy</span>
+            <hr class="divider">
+
+            <!-- Metadata Row -->
+            <div class="row experience-meta">
+              <div class="col s12 m4"><strong>Role:</strong> E‑Commerce Specialist (Hybrid)</div>
+              <div class="col s12 m4"><strong>Location:</strong> Aurora, ON</div>
+              <div class="col s12 m4"><strong>Dates:</strong> July 2024 – February 2025</div>
+            </div>
+
+            <!-- Key Contributions -->
+            <p><strong>Key Contributions:</strong></p>
+            <ul class="browser-default">
+              <li>Managed the pharmacy’s e‑commerce platform and website for optimal functionality, security, and user experience.</li>
+              <li>Collaborated with the lead pharmacist to create customized vitamins and supplements, increasing digital presence.</li>
+              <li>Optimized product listings and online store engagement strategies to improve customer interaction and sales.</li>
+              <li>Ensured seamless integration between e‑commerce, inventory, and POS systems for accurate real‑time tracking.</li>
+              <li>Enhanced site speed, mobile responsiveness, and accessibility for a better customer experience.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Feel free to reach out via <a href="mailto:lapradenick@gmail.com">email</a> or connect on <a href="https://www.linkedin.com/in/nicholas-laprade" target="_blank">LinkedIn</a>.</p>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Nicholas Laprade</p>
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </nav>
+
+
+
+
+  <!-- Contact Section -->
+<section id="contact" class="section">
+  <div class="container">
+    <h3 class="teal-text">CONTACT</h3>
+    <ul class="contact-list">
+      <li>
+        <a href="https://www.linkedin.com/in/nicholas-laprade" target="_blank" title="View Nicholas on LinkedIn">
+          <i class="fab fa-linkedin linkedin-icon"></i> linkedin.com/in/nicholas-laprade
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/nlaprade" target="_blank" title="View Nicholas on GitHub">
+          <i class="fab fa-github github-icon"></i> github.com/nlaprade
+        </a>
+      </li>
+      <li>
+        <a href="mailto:lapradenick@gmail.com" title="Email Nicholas">
+          <i class="fa-solid fa-envelope email-icon"></i> lapradenick@gmail.com
+        </a>
+      </li>
+      <li>
+        <a href="tel:+12898799303" title="Call Nicholas">
+          <i class="fa-solid fa-phone phone-icon"></i> +1 (289) 879‑9303
+        </a>
+      </li>
+      <li>
+        <a href="Nicholas Laprade Resume.pdf" target="_blank"><i class="fa fa-file-alt"></i> Resume</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="a">
+    <div class="container center-align">
+      <p>&copy; 2025 Nicholas Laprade</p>
+    </div>
   </footer>
-
-  <script>
-  const toggle = document.getElementById('darkModeToggle');
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.accordion-toggle').forEach(button => {
-      button.addEventListener('click', () => {
-        const content = button.nextElementSibling;
-        content.classList.toggle('open');
-      });
-    });
-  });
-</script>
 
 
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+  });
+</script>
+<script async defer data-domain="https://nlaprade.github.io/" src="https://plausible.io/js/script.js"></script>
+
+
+
 </html>
+
+
